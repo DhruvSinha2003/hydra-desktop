@@ -1,52 +1,24 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Hydra Desktop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/monokai.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="editor-container">
-        <div id="monaco-editor"></div>
-        <div class="controls">
-          <button id="run-code">Run</button>
-          <button id="save-snippet">Save</button>
-          <button id="load-snippet">Load</button>
-        </div>
-      </div>
-      <div class="preview-container">
-        <canvas id="hydra-canvas"></canvas>
-        <div class="parameters">
-          <div class="parameter">
-            <label>Scale</label>
-            <input
-              type="range"
-              id="scale"
-              min="0"
-              max="10"
-              step="0.1"
-              value="1"
-            />
-          </div>
-          <div class="parameter">
-            <label>Rotation</label>
-            <input type="range" id="rotation" min="0" max="360" value="0" />
-          </div>
-          <div class="parameter">
-            <label>Hue</label>
-            <input
-              type="range"
-              id="hue"
-              min="0"
-              max="1"
-              step="0.01"
-              value="0"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.js"></script>
+    <canvas id="hydra-canvas"></canvas>
+    <div id="editor"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://unpkg.com/hydra-synth"></script>
     <script src="app.js"></script>
   </body>
 </html>
