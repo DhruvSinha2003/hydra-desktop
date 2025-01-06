@@ -8,6 +8,31 @@ body {
   background: black;
 }
 
+#documentation-links {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#documentation-links a {
+  color: white;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#documentation-links a:hover {
+  background: rgba(0, 0, 0, 0.9);
+  transform: translateX(-5px);
+}
+
 #hydra-canvas {
   position: fixed;
   top: 0;

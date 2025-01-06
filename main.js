@@ -10,6 +10,7 @@ function createWindow() {
     width: 1200,
     height: 800,
     backgroundColor: "#000000",
+    icon: path.join(__dirname, "assets", "icon.ico"), // Add icon
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,

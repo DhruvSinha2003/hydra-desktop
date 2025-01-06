@@ -1,4 +1,3 @@
-// Initial code that will run when the app starts
 const initialCode = `// Welcome to Hydra!
 osc(60, 0.1, 0.8)
   .color(0.8, 0.3, 0.9)
